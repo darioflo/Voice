@@ -1,0 +1,76 @@
+:root{
+    --first-color: #22A39F;
+    --first-color-neon: #00fff7;
+    --second-color:#434242;
+    --third-color:#d6d5d1;
+    --background-color:#222222;
+}
+
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img-brand{
+    width: 40%;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img{
+    width: inherit;
+}
+
+.narrador{
+    border: thin solid var(--first-color-neon);
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    margin: 5rem auto;
+    background-color: var(--second-color);
+}
+
+#voces{
+    width: 15rem;
+    border: none;
+    outline-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+
+textarea{
+    resize: none;
+    width: 25vw;
+    height:20vh;
+    outline-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#leer{
+    background-color: var(--first-color);
+    border: none;
+    outline: none;
+    width: 5rem;
+    height: 5vh;
+    border-radius: .5rem;
+}
